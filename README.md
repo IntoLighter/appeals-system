@@ -12,4 +12,4 @@ You'll get a jar file which can be run by:
 
 ```java -jar name.jar```
 
-But, before running, need to configure a psql server listen on port 5432. Once deployed, you can access the app at http://localhost:9010.
+But, before running, need to configure a psql server listen on port 5432 with the database appeals_system. Once deployed, you can access the app at http://localhost:9010.
