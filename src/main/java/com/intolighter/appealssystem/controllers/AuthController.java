@@ -1,6 +1,5 @@
 package com.intolighter.appealssystem.controllers;
 
-import com.intolighter.appealssystem.events.OnRegistrationCompleteEvent;
 import com.intolighter.appealssystem.repositories.VerificationTokenRepository;
 import com.intolighter.appealssystem.requests.SignInRequest;
 import com.intolighter.appealssystem.requests.SignUpRequest;
@@ -42,7 +41,7 @@ public class AuthController {
     public ResponseEntity<?> signUp(@Valid @RequestBody SignUpRequest signUpRequest, WebRequest request) {
         val appUrl = request.getContextPath();
         val user = service.registerNewUserAccount(signUpRequest);
-        eventPublisher.publishEvent(new OnRegistrationCompleteEvent(user, request.getLocale(), appUrl));
+//        eventPublisher.publishEvent(new OnRegistrationCompleteEvent(user, request.getLocale(), appUrl));
 
         return ResponseEntity.ok(new MessageResponse("User created successfully"));
     }

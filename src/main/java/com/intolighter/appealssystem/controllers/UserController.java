@@ -19,7 +19,7 @@ public class UserController {
         RepresentationModel<?> resource = new RepresentationModel<>();
         resource.add(
                 linkTo(methodOn(UserController.class).findUser(id)).withSelfRel(),
-                linkTo(methodOn(AppealController.class).findAppealsByUserId(id, false)).withRel("appeals"));
+                linkTo(methodOn(AppealController.class).findAllAppeals(id, false)).withRel("appeals"));
 
         return ResponseEntity.ok(resource);
     }
