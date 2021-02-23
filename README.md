@@ -1,7 +1,7 @@
 # System of Citizen Appeals to Government
 
 It's an implementation of the test task from the vacancy http://infotech24.ru/tabid/102/Default.aspx.
-It uses jwt bearer token authentication. In addition to the specified requirements I've added:
+It uses the jwt authentication. In addition to the specified requirements I've added:
 * Account confirmation by email.
 * The side of the government representative, where he can view all the appeals.
 
