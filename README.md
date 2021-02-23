@@ -11,3 +11,5 @@ It uses jwt bearer token authentication. In addition to the specified requiremen
 You'll get a jar file which can be run by:
 
 ```java -jar name.jar```
+
+Once deployed, you can access the app at http://localhost:9010
