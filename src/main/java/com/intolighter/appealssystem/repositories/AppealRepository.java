@@ -1,7 +1,9 @@
 package com.intolighter.appealssystem.repositories;
 
 import com.intolighter.appealssystem.models.Appeal;
+import lombok.val;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -13,17 +15,25 @@ import java.util.Optional;
 @Component
 public class AppealRepository extends RepositoryUtils {
 
-    public AppealRepository(JdbcTemplate jdbcTemplate) {
+    private static UserRepository userRepository;
+
+    public AppealRepository(JdbcTemplate jdbcTemplate, UserRepository userRepository) {
         super(jdbcTemplate, "appeals");
+        AppealRepository.userRepository = userRepository;
     }
 
     private static Appeal mapToAppeal(ResultSet rs, int rowNum) throws SQLException {
+        val id = rs.getLong("user_id");
+        val user =  userRepository.findById(id).orElseThrow(() ->
+                new UsernameNotFoundException("User with id " + id + " is not found"));
+
         return new Appeal(
                 rs.getLong("id"),
                 rs.getDate("request_time"),
                 rs.getString("classifier"),
                 rs.getString("description"),
-                rs.getBoolean("archived"));
+                rs.getBoolean("archived"),
+                user);
     }
 
     public Appeal save(Appeal appeal) {

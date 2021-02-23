@@ -1,6 +1,5 @@
 package com.intolighter.appealssystem.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,7 +19,6 @@ public class Appeal {
     private long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnore
     private User user;
 
     @Setter(AccessLevel.NONE)
@@ -33,11 +31,12 @@ public class Appeal {
 
     private boolean archived = false;
 
-    public Appeal(long id, Date requestTime, String classifier, String description, boolean archived) {
+    public Appeal(long id, Date requestTime, String classifier, String description, boolean archived, User user) {
         this.id = id;
         this.requestTime = requestTime;
         this.classifier = classifier;
         this.description = description;
         this.archived = archived;
+        this.user = user;
     }
 }

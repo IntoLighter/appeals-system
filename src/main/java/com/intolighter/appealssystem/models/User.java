@@ -1,5 +1,6 @@
 package com.intolighter.appealssystem.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,6 +13,7 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 //        uniqueConstraints = {@UniqueConstraint(columnNames = {"phoneNumber", "email"})})
+@JsonIgnoreProperties({"id", "phoneNumber", "email", "password", "roles", "enabled"})
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

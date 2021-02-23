@@ -7,14 +7,18 @@ import com.intolighter.appealssystem.models.Appeal;
 import com.intolighter.appealssystem.repositories.AppealRepository;
 import com.intolighter.appealssystem.repositories.UserRepository;
 import lombok.val;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
@@ -25,9 +29,11 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 @RequestMapping("/users/{userId}/appeals")
 public class AppealController {
 
-    private AppealModelAssembler assembler;
-    private UserRepository userRepository;
-    private AppealRepository appealRepository;
+    private final AppealModelAssembler assembler;
+    private final UserRepository userRepository;
+    private final AppealRepository appealRepository;
+
+    private static Logger logger = LoggerFactory.getLogger(AppealController.class);
 
     public AppealController(AppealModelAssembler assembler,
                             UserRepository userRepository,
@@ -37,28 +43,26 @@ public class AppealController {
         this.appealRepository = appealRepository;
     }
 
-    private void setUserIdInAssembler(long id) {
-        assembler.userId = id;
-    }
-
-//    @PreAuthorize("hasRole('GOVERNMENT')")
-//    @GetMapping("")
-//    public ResponseEntity<CollectionModel<EntityModel<Appeal>>> findAppeals(
-//            @PathVariable long userId, @RequestParam boolean archived) {
-//        setUserIdInAssembler(userId);
-//        return ResponseEntity.ok(assembler.toCollectionModel(appealRepository.findAll(archived)));
-//    }
-
     @GetMapping
-    public ResponseEntity<CollectionModel<EntityModel<Appeal>>> findAppealsByUserId(
-            @PathVariable long userId, @RequestParam(required = false, defaultValue = "false") boolean archived) {
-        setUserIdInAssembler(userId);
-        return ResponseEntity.ok(assembler.toCollectionModel(appealRepository.findAllByUserId(userId, archived)));
+    public ResponseEntity<CollectionModel<EntityModel<Appeal>>> findAllAppeals(
+            @PathVariable long userId,
+            @RequestParam(required = false, defaultValue = "false") boolean archived) {
+        val role =
+                SecurityContextHolder.getContext().getAuthentication().getAuthorities().toArray()[0].toString();
+        List<Appeal> appeals;
+        if (role.equals("ROLE_GOVERNMENT")) {
+            appeals = appealRepository.findAll(archived);
+        } else if (role.equals("ROLE_USER")) {
+            appeals = appealRepository.findAllByUserId(userId, archived);
+        } else {
+            throw new RuntimeException("User role " + role + " is not found");
+        }
+
+        return ResponseEntity.ok(assembler.toCollectionModel(appeals));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<EntityModel<Appeal>> findAppeal(@PathVariable long id, @PathVariable long userId) {
-        setUserIdInAssembler(userId);
         val employee = appealRepository.findById(id)
                 .orElseThrow(() -> new AppealNotFoundException(id));
 
@@ -67,8 +71,6 @@ public class AppealController {
 
     @PostMapping
     public ResponseEntity<?> createAppeal(@Valid @RequestBody Appeal appeal, @PathVariable long userId) {
-        setUserIdInAssembler(userId);
-
         if (appealRepository.existsByDescription(appeal.getDescription())) {
             throw new AppealAlreadyExistsException(
                     "There is an appeal with the description: '" + appeal.getDescription() + "'");
@@ -88,7 +90,6 @@ public class AppealController {
     @PutMapping("/{id}")
     public ResponseEntity<?> replaceAppeal(
             @Valid @RequestBody Appeal appeal, @PathVariable long id, @PathVariable long userId) {
-        setUserIdInAssembler(userId);
         val _appeal = appealRepository.findById(id)
                 .orElseThrow(() -> new AppealNotFoundException(id));
 
@@ -104,7 +105,6 @@ public class AppealController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteAppeal(@PathVariable long id, @PathVariable long userId) {
-        setUserIdInAssembler(userId);
         appealRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }
