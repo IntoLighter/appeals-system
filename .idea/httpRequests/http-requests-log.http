@@ -1,0 +1,445 @@
+GET http://localhost:9010/api/users/7/appeals/archived
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+
+<> 2021-03-04T130057.200.json
+
+###
+
+GET http://localhost:9010/api/users/7/appeals/am
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+
+<> 2021-03-04T130050.400.json
+
+###
+
+GET http://localhost:9010/api/users/7/appeals/archived
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+
+<> 2021-03-04T130044.200.json
+
+###
+
+GET http://localhost:9010/api/users/7/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+
+<> 2021-03-04T130039.200.json
+
+###
+
+POST http://localhost:9010/api/users/7/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+Content-Type: application/json
+
+{
+  "classifier": "education",
+  "description": "Exclude history from mandatory program"
+}
+
+<> 2021-03-04T130027.201.json
+
+###
+
+GET http://localhost:9010/api/users/7/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0ODM3NTU3LCJleHAiOjE2MTQ5MjM5NTd9.K6s6rtfnRHu72VNXAJLVlipoVA_zRyybUHwBsa2egfwKCnZA3IhW68q_rqJz-uo4h56LHHij9DGQNPHBvUiazw
+
+<> 2021-03-04T125954.200.json
+
+###
+
+GET http://localhost:9010/api/users/7/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMTM4LCJleHAiOjE2MTQ1MDk1Mzh9.pwOvZBs-ou4ZZJWuQhGwfVYMQPHBRp_UegOpQYAyv4v8Qn-ADx5xF8i64dWu0tIQyTQW3z-bGt59nFlDsuGTUQ
+
+<> 2021-03-04T125928.401.json
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+<> 2021-03-04T125917.200.json
+
+###
+
+GET http://localhost:9010/api/users/6/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMTM4LCJleHAiOjE2MTQ1MDk1Mzh9.pwOvZBs-ou4ZZJWuQhGwfVYMQPHBRp_UegOpQYAyv4v8Qn-ADx5xF8i64dWu0tIQyTQW3z-bGt59nFlDsuGTUQ
+
+<> 2021-03-04T125905.401.json
+
+###
+
+GET http://localhost:9010/api/users/6/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMTM4LCJleHAiOjE2MTQ1MDk1Mzh9.pwOvZBs-ou4ZZJWuQhGwfVYMQPHBRp_UegOpQYAyv4v8Qn-ADx5xF8i64dWu0tIQyTQW3z-bGt59nFlDsuGTUQ
+
+<> 2021-03-04T125628.404.json
+
+###
+
+POST http://localhost:9010/api/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "a",
+  "lastName": "b",
+  "email": "intolighter.net@gmail.com",
+  "password": "12345",
+  "phoneNumber": "33435543333"
+}
+
+<> 2021-03-04T123156.200.json
+
+###
+
+POST http://localhost:9010/api/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "a",
+  "lastName": "b",
+  "email": "intolighter.net@gmail.com",
+  "password": "12345",
+  "phoneNumber": "33435543333"
+}
+
+<> 2021-03-04T123141.403.json
+
+###
+
+POST http://localhost:9010/api/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "a",
+  "lastName": "b",
+  "email": "intolighter.net@gmail.com",
+  "password": "12345",
+  "phoneNumber": "33435543333"
+}
+
+###
+
+POST http://localhost:9010/api/auth/signup
+Content-Type: application/json
+
+{
+  "firstName": "a",
+  "lastName": "b",
+  "email": "intolighter.net@gmail.com",
+  "password": "12345",
+  "phoneNumber": "33435543333"
+}
+
+<> 2021-03-04T123109.500.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T112121.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "password": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T112050.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T112038.400.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T111844.400.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T111710.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T111317.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T111201.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword?token=4ce344ce-7d25-42c7-95b1-503c88d8965f
+Content-Type: application/json
+
+{
+  "newPassword": "1234",
+  "token": "4ce344ce-7d25-42c7-95b1-503c88d8965f"
+}
+
+<> 2021-02-28T111139.500.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword?token=4ce344ce-7d25-42c7-95b1-503c88d8965f
+
+<> 2021-02-28T110949.500.json
+
+###
+
+POST http://localhost:9010/api/auth/resetPassword?email=intolighter.net@gmail.com
+
+<> 2021-02-28T110910.200.json
+
+###
+
+POST http://localhost:9010/api/auth/savePassword?token=e730013f-f348-4ae5-b22b-78b9da85db01
+
+<> 2021-02-28T110256.500.json
+
+###
+
+POST http://localhost:9010/api/auth/resetPassword?email=intolighter.net@gmail.com
+
+<> 2021-02-28T110119.200.json
+
+###
+
+POST http://localhost:9010/api/auth/resetPassword?email=intolighter.net@gmail.com
+
+<> 2021-02-28T104832.200.json
+
+###
+
+POST http://localhost:9010/api/auth/resetPassword?email=intolighter.net@gmail.com
+
+<> 2021-02-28T104214.200.json
+
+###
+
+POST http://localhost:9010/api/auth/resetPassword?email=intolighter.net@gmail.com
+
+<> 2021-02-28T103743.500.json
+
+###
+
+GET http://localhost:9010/api/users/5/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMTM4LCJleHAiOjE2MTQ1MDk1Mzh9.pwOvZBs-ou4ZZJWuQhGwfVYMQPHBRp_UegOpQYAyv4v8Qn-ADx5xF8i64dWu0tIQyTQW3z-bGt59nFlDsuGTUQ
+
+<> 2021-02-27T175329.200.json
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+<> 2021-02-27T175218.200.json
+
+###
+
+GET http://localhost:9010/api/users/5/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMDYxLCJleHAiOjE2MTQ1MDk0NjF9.3fn2OL6MNkAajY-GVozYQa83QphSe6ZUnBTuR0ZGFzKE2Y7f2h6FfqjL5hNFwywWvJtAZ8V_FCqrEEfSgo5JPw
+
+<> 2021-02-27T175131.200.json
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0NDIzMDYxLCJleHAiOjE2MTQ1MDk0NjF9.3fn2OL6MNkAajY-GVozYQa83QphSe6ZUnBTuR0ZGFzKE2Y7f2h6FfqjL5hNFwywWvJtAZ8V_FCqrEEfSgo5JPw
+
+<> 2021-02-27T175125.200.json
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+<> 2021-02-27T175101.200.json
+
+###
+
+GET http://localhost:9010/api/users/5/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T174954.404.json
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T174946.200.json
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T143535.200.json
+
+###
+
+POST http://localhost:9010/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T135645.200.json
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T135637.200.json
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+###
+
+POST http://localhost:9010/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "intolighter.net@gmail.com",
+  "password": "12345"
+}
+
+<> 2021-02-27T135435.404.json
+
+###
+
+GET http://localhost:9010/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T135417.200.json
+
+###
+
+GET http://localhost:9010/api/users/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T135356.404.json
+
+###
+
+GET http://localhost:9010/api/users/5/appeals
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJpbnRvbGlnaHRlci5uZXRAZ21haWwuY29tIiwiaWF0IjoxNjE0MDg1MzEyLCJleHAiOjE2MTQxNzE3MTJ9.gpoglCmJs24KFh9_d0oPy6LKB3aVSKVGyFRaYtMfkuDWEj7pxkdPULywrErFOkIEQJ5ZmmqhsO-EKyTcTF2VFw
+
+<> 2021-02-27T135324.404.json
+
+###
+
