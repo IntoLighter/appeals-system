@@ -1,7 +1,7 @@
 package com.intolighter.appealssystem.web.controllers;
 
 import com.intolighter.appealssystem.web.events.OnRegistrationCompleteEvent;
-import com.intolighter.appealssystem.persistence.models.PasswordDto;
+import com.intolighter.appealssystem.web.models.requests.PasswordDto;
 import com.intolighter.appealssystem.persistence.repositories.VerificationTokenRepository;
 import com.intolighter.appealssystem.services.UserService;
 import com.intolighter.appealssystem.web.models.requests.SignInRequest;

@@ -1,4 +1,4 @@
-package com.intolighter.appealssystem.persistence.models;
+package com.intolighter.appealssystem.web.models.requests;
 
 import lombok.Data;
 
