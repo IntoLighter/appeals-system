@@ -6,6 +6,7 @@ src/test/
 !**/src/test/**/target/
 mvnw*
 requests.http
+http-client.*
 
 ### STS ###
 .apt_generated
@@ -35,4 +36,3 @@ build/
 ### VS Code ###
 .vscode/
 /.mvn/
-http-client.private.env.json
